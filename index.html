@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日程表与周报生成器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="wechat_2026-03-25_212513_377.png" alt="Logo" class="logo">
+        </div>
+        <h1>日程表与周报生成器</h1>
+        
+        <div class="calendar-header">
+            <h2>当前周: <span id="currentWeek"></span></h2>
+            <button id="prevWeek">上一周</button>
+            <button id="currentWeekBtn">本周</button>
+            <button id="nextWeek">下一周</button>
+        </div>
+        
+        <div class="task-container">
+            <div class="todo-section">
+                <h3>待办事项 (Todo List)</h3>
+                <div class="task-input">
+                    <input type="text" id="todoInput" placeholder="添加待办事项...">
+                    <button id="addTodo">添加</button>
+                </div>
+                <ul id="todoList"></ul>
+            </div>
+            
+            <div class="done-section">
+                <h3>已完成事项 (Done List)</h3>
+                <div class="task-input">
+                    <input type="text" id="doneInput" placeholder="添加已完成事项...">
+                    <button id="addDone">添加</button>
+                </div>
+                <ul id="doneList"></ul>
+                <button id="generateReport">生成周报</button>
+            </div>
+            
+            <div class="nextweek-section">
+                <h3>下周计划 (Next Week Plan)</h3>
+                <div class="task-input">
+                    <input type="text" id="nextweekInput" placeholder="添加下周计划...">
+                    <button id="addNextweek">添加</button>
+                </div>
+                <ul id="nextweekList"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/docxtemplater@3.37.12/build/docxtemplater.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pizzip@3.1.4/dist/pizzip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pizzip@3.1.4/dist/pizzip-utils.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
