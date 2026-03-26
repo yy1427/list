@@ -301,7 +301,7 @@ function generateReport() {
 // 创建Word文档
 function createWordDocument(data) {
     // 使用HTML表格格式创建Word文档内容
-    const templateContent = `<div style="text-align: center; font-weight: bold; font-size: 16px; margin-bottom: 10px;">华盛兴工作周报</div>
+    const templateContent = `<div style="text-align: center; font-weight: bold; font-size: 16px; margin-bottom: 10px;">华盛兴伟工作周报</div>
 
 <div style="text-align: center; margin-bottom: 15px;">汇报人：________（${data.startDate}至${data.endDate}）</div>
 
